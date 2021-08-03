@@ -3,6 +3,7 @@
 ## Spirit GIF
 
 `https://github.com/xicaz/Spirit-GIF`
+`https://xicaz.github.io/Spirit-GIF/`
 
 ## Project Description
 
@@ -12,7 +13,7 @@ The project will be a playful site using Giphy's API to create the user's GIF/me
 
 ## API and Data Sample
 
-````
+```
      "data": [
         {
             "type": "sticker",
@@ -195,8 +196,9 @@ The project will be a playful site using Giphy's API to create the user's GIF/me
                     "size": "1570395",
                     "url": "https://media1.giphy.com/media/cL5rCz0o6NsJ5R5bdv/480w_s.jpg?cid=180751484rm3itcdatgt9t9i1quuucl9o71uv90rsbft1fz8&rid=480w_s.jpg&ct=s"
                 }
-            },```
+            },
 
+```
 
 ## Wireframes
 
@@ -211,10 +213,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP
 
-
-
 ![Spirit Gif](https://i.postimg.cc/jjxgnzmd/MVP.png)
-
 
 - Find and use external api
 - Render data on page
@@ -223,7 +222,6 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### PostMVP
 
 - Add second API to add random animals using the same first letter.
-
 
 ## Project Schedule
 
@@ -260,17 +258,20 @@ Time frames are also key in the development cycle. You have limited time to code
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
 
-
-
-```function reverse(string) {
-// here is the code to reverse a string of text
+```
+function random(string) {
+// here is the code where I randomize the animal gif, tbc.
 }
-````
+
+```
 
 ## Change Log
 
 <!-- Use this section to document what changes were made and the reasoning behind those changes. -->
 
 ```
+function tbc {
+  tbc
+}
 
 ```
