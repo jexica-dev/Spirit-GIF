@@ -3,15 +3,16 @@
 html {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
+  font-size: larger;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .box {
   background: white;
-  border: 0.25px solid black;
+  /* border: 0.25px solid black; */
   padding: 20px;
-  margin: 5% 25% 0;
+  margin: 5% 25% 5%;
   font-family: "Work Sans", sans-serif;
   font-size: 18px;
   text-align: center;
@@ -20,13 +21,39 @@ html {
 
 .inline-block {
   display: inline-block;
-  border: 0.25px solid black;
-  margin: 15px;
-  padding: 15px;
+  border: 0.125px solid black;
+  margin: -15px;
+  padding: 15%;
   font-size: 18px;
   text-align: center;
 }
 
+#one {
+  background-image: url("");
+  background-size: cover;
+  /* max-width: fit-content; */
+}
+
+#two {
+  background-image: url("");
+  background-size: cover;
+}
+
+#three {
+  background-image: url("");
+  background-size: cover;
+}
+
+#four {
+  background-image: url("");
+  background-size: cover;
+}
+
 button {
-  margin-top: 5%;
+  margin-top: 3%;
+  padding: 5px 20px 5px;
+  margin-bottom: 3%;
+}
+input {
+  padding: 5px 20px 5px;
 }

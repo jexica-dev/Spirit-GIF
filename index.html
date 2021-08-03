@@ -7,10 +7,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Spirit GIF</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     
   </head>
  <body>
@@ -18,16 +20,21 @@
       <header>
         <h1>Spirit GIF</h1>
       </header>
+      <div class="search-section">
+        <input type="text" id="name" placeholder="Name">
+        <button id="search">click</button>
+      </div>
+      
       <div class="box" id="memes">
-        <div id="one" class="inline-block">a </div>
-        <div id="two" class="inline-block">b </div>
-        <div id="three" class="inline-block">c </div>
-        <div id="four" class="inline-block">d</div>
-        <div id="five" class="inline-block">e</div>
-        <div id="six" class="inline-block">f</div>
+        <div id="one" class="inline-block"></div>
+        <div id="two" class="inline-block"></div>
+        <div id="three" class="inline-block"> </div>
+        <div id="four" class="inline-block"></div>
+        <div id="five" class="inline-block"></div>
+        <div id="six" class="inline-block"></div>
       </div>
  
-      <button><h3>press</h3></button>
+
 
 
 
@@ -39,6 +46,8 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <script src="" async defer></script>
+    <script src="app.js" async defer></script>
+    <script src="async.js" async defer></script>
+
   </body>
 </html>
