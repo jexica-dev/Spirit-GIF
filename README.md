@@ -197,6 +197,7 @@ The project will be a playful site using Giphy's API to create the user's GIF/me
                 }
             },```
 
+---------------------------------------------------------
 ## Wireframes
 
 Giphy's API
@@ -270,4 +271,6 @@ function reverse(string) {
 ## Change Log
 
 Use this section to document what changes were made and the reasoning behind those changes.
+
+
 ```
