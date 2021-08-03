@@ -197,7 +197,7 @@ The project will be a playful site using Giphy's API to create the user's GIF/me
                 }
             },```
 
----------------------------------------------------------
+
 ## Wireframes
 
 Giphy's API
@@ -260,18 +260,17 @@ Time frames are also key in the development cycle. You have limited time to code
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
 
-````
 
-function reverse(string) {
+
+```function reverse(string) {
 // here is the code to reverse a string of text
 }
-
-```
+````
 
 ## Change Log
 
-Use this section to document what changes were made and the reasoning behind those changes.
+<!-- Use this section to document what changes were made and the reasoning behind those changes. -->
 
-
+```
 
 ```
