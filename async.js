@@ -42,13 +42,27 @@ fetchData();
 // Step 3: Create dynamic HTML
 
 function showGifData(data) {
-  console.log("Inside show", data)
+  // console.log(data.name)
   // gif stickers
-  let gifElements = 
-    <img src="${data.gif}">
+  let gifElements = `<img src="${data.gif}">`
     
-  document.querySelector('#name').insertAdjacentHTML('beforeend',gifElements)
+ document.querySelector('#name').insertAdjacentHTML('beforeend', gifElements) 
 }
+
+// Step 4
+
+// Step 5
+const form = document.querySelector('#name-form')
+//console.log(form)
+//write eventHandler here
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+  const textInput = document.querySelector('#name')
+  console.log(textInput.value)
+  fetchData(textInput.value)
+})
+
 
 
 
