@@ -5,24 +5,59 @@ const BASE_URL = `${DOMAIN}?api_key=${API_KEY}&q=`;
 
 const button = document.querySelector("#search")
 
-async function getGif() {
-  const response = await axios.get(`${BASE_URL}${NAME.value}`)
-  showGifData(response.data.data)
-}
 
-button.addEventListener('click', getGif)
+// Adding 
+
+let inputName = "example-name"
+
+const nameFirstLetter = inputName[0]
+
+let animalName = "";
+
+let letters = "abcdefghijklmnopqrstuvwxyz"
+
+let animals = ["Alligator", "Bear", "Cat", "Dragon", "Elephant", "Frog", "Goat", "Horse", "Iguana", "Jaguar", "Kangeroo", "Lion", "Monkey", "Narwhal", "Otter", "Penguin", "Quail", "Rabbit", "Snake", "Tiger", "Unagi", "Vulture", "Wolf", "Axolotl", "Yak", "Zebra"]
+
+let nameFirstLetterIndex = letters.indexOf(nameFirstLetter)
+
+animalName = animals[nameFirstLetterIndex]
 
 
+//
 function showGifData(gifs) {
   gifs.forEach((gif, index) => {
+
   //append gif to container
     // let gifElements = `<img src="${gif.images.downsized_medium.url}">`
+
     let gifElements = `
-    <div id="gif-${index}">
+    <div id="gif-${index}" class="gif">
       <img src="${gif.images.downsized_medium.url}">
     </div>`
     document.querySelector('#gif-container').insertAdjacentHTML('beforeend', gifElements) 
   });
-  
-  
+   
 }
+
+
+
+async function getGif() {
+    let gifContainer = document.querySelector('#gif-container')
+    gifContainer.innerHTML = ""
+  const response = await axios.get(`${BASE_URL}${NAME.value}`)
+  // const responseAnimal = await.get(`${BASE_URL}${animalName.value}`)
+  showGifData(response.data.data)
+  // showGifData(responseAnimal.data.data)
+
+  // functionName(response.data.data) to grab the animals and append 
+}
+
+
+button.addEventListener('click', getGif)
+
+
+
+
+
+ 
+
