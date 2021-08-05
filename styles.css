@@ -27,23 +27,25 @@ header {
 } */
 
 .gif {
+  height: 50vh;
+}
+
+.gif-block {
   display: inline-block;
   /* border: 1px solid black; */
-  margin: -25%;
-  /* padding: 15px; */
-  width: 150px;
+  padding: 15px;
+  /* width: 275px; */
   text-align: center;
+  margin: -10%;
 }
 
 #gif-container {
-  padding: 20px;
-  margin: 10% 25% 0;
+  margin: 15% 25% 0;
   text-align: center;
   z-index: -5;
   position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 100%;
+  top: -15%;
+  left: -35%;
 }
 
 button {
