@@ -8,12 +8,13 @@ const button = document.querySelector("#search")
 
 // Adding 
 
-
-
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
 
 function showAnimal(animalName) {
 
-  let firstAnimal = animalName[0];
+  let firstAnimal = animalName[getRandomInt(10)];
 
 
 
@@ -34,15 +35,17 @@ function showGifData(gifs) {
 
   //append gif to container
 
-    
-    let gifElements = `
-    <div id="gif-${index}" class="gif-block">
-      <img class="gif" src="${gif.images.downsized_medium.url}">
+    if (Math.random() > .5) {
 
-    </div>
-    `
-    document.querySelector('#gif-container').insertAdjacentHTML('beforeend', gifElements)
-    
+      let gifElements = `
+      <div id="gif-${index}" class="gif-block">
+        <img class="gif" src="${gif.images.downsized_medium.url}">
+  
+      </div>
+      `
+      document.querySelector('#gif-container').insertAdjacentHTML('beforeend', gifElements)
+  
+    }
   });
    
 }
@@ -52,7 +55,9 @@ function showGifData(gifs) {
 
 async function getGif() {
 
-  let inputName = NAME.value
+  let inputName = NAME.value.toLowerCase()
+
+
 
   const nameFirstLetter = inputName[0]
   
@@ -60,7 +65,8 @@ async function getGif() {
   
   let letters = "abcdefghijklmnopqrstuvwxyz"
   
-  let animals = ["Alligator", "Bear", "Cat", "Dragon", "Elephant", "Frog", "Goat", "Horse", "Iguana", "Jaguar", "Kangeroo", "Lion", "Monkey", "Narwhal", "Otter", "Penguin", "Quail", "Rabbit", "Snake", "Tiger", "Unagi", "Vulture", "Wolf", "Axolotl", "Yak", "Zebra"]
+
+  let animals = ["Alligator", "Bear", "Cat", "Dragon", "Elephant", "Frog", "Goats", "Horse", "Iguana", "jaguars", "Kangeroo", "Lion", "cute monkey", "Narwhal", "Otter", "Penguin", "Quail", "Rabbit", "Snake", "Tigers", "Unagi", "Vulture", "Wolf", "Axolotls", "Yak", "Zebra"]
   
   let nameFirstLetterIndex = letters.indexOf(nameFirstLetter)
   animalName = animals[nameFirstLetterIndex]

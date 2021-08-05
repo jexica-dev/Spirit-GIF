@@ -5,8 +5,8 @@
 // Step 1: Fetch Gif data from Giphy using .then()
 
 // function fetchData(Gif) {
-  // Get Gif 
-  // const url = ``
+//   Get Gif 
+//   const url = ``
 // Write code here.
 //   axios.get(url)
 //     .then((res) => {
