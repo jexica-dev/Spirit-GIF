@@ -4,7 +4,7 @@ html {
   overflow: hidden;
 }
 header {
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 50px;
   text-align: center;
@@ -59,9 +59,26 @@ input {
 
 @media only screen and (min-width: 200px) {
   header {
-    max-width: fit-content;
-    max-height: fit-content;
-    line-height: 15vh;
-    margin-top: -1vh;
+    left: 20%;
+    line-height: 13vh;
+  }
+
+  #gif-block {
+    position: block;
+    overflow: hidden;
+    max-width: max-content;
+    overflow: hidden;
+    top: 5%;
+  }
+
+  #gif {
+    position: absolute;
+    left: -30%;
+    max-height: 5vh;
+  }
+
+  body {
+    display: block;
+    position: fixed;
   }
 }

@@ -109,9 +109,22 @@ Time frames are also key in the development cycle. You have limited time to code
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
 
 ```
-function random(string) {
-// here is the code where I randomize the animal gif, tbc.
-}
+
+<!-- This is where I add animals based on the first letter of their names. -->
+
+let inputName = NAME
+
+const nameFirstLetter = inputName[0]
+
+let animalName = "";
+
+let letters = "abcdefghijklmnopqrstuvwxyz"
+
+let animals = ["Alligator", "Bear", "Cat", "Dragon", "Elephant", "Frog", "Goat", "Horse", "Iguana", "Jaguar", "Kangeroo", "Lion", "Monkey", "Narwhal", "Otter", "Penguin", "Quail", "Rabbit", "Snake", "Tiger", "Unagi", "Vulture", "Wolf", "Axolotl", "Yak", "Zebra"]
+
+let nameFirstLetterIndex = letters.indexOf(nameFirstLetter)
+animalName = animals[nameFirstLetterIndex]
+
 
 ```
 
@@ -120,8 +133,8 @@ function random(string) {
 <!-- Use this section to document what changes were made and the reasoning behind those changes. -->
 
 ```
-function tbc {
-  tbc
-}
+
+A lot of changes were based on formatting the layout correctly, testing the gif containers and making the images overlap, trying new typefaces, and playing with javascript functions.
+
 
 ```

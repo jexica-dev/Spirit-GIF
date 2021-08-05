@@ -39,7 +39,6 @@ function showGifData(gifs) {
   gifs.forEach((gif, index) => {
 
   //append gif to container
-    // let gifElements = `<img src="${gif.images.downsized_medium.url}">`
 
     
     let gifElements = `
@@ -60,10 +59,11 @@ async function getGif() {
     let gifContainer = document.querySelector('#gif-container')
   gifContainer.innerHTML = ""
   const responseAnimal = await axios.get(`${BASE_URL}${animalName}`)
+  
   const response = await axios.get(`${BASE_URL}${NAME.value}`)
+  // showAnimalData(responseAnimal.data.data)
   showGifData(response.data.data)
   // console.log(response)
-  showAnimalData(responseAnimal.data.data)
 
   // functionName(response.data.data) to grab the animals and append 
 }
