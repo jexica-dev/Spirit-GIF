@@ -14,13 +14,24 @@ header {
   filter: drop-shadow(5px 5px 1px yellow);
 }
 
-
+.gif {
+ max-width: 35vw;
+ max-height: 55vh;
+}
 
 .gif-block {
   display: inline-block;
   padding: 15px;
   text-align: center;
   margin: -13%;
+}
+
+#animal-container img {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  width: 35vw;
+  z-index: -3;
 }
 
 #gif-container {
@@ -31,6 +42,8 @@ header {
   top: -15%;
   left: -25%;
 }
+
+
 
 button {
   margin-top: 3%;
