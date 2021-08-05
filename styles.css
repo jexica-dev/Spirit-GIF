@@ -36,7 +36,7 @@ header {
   padding: 15px;
   /* width: 275px; */
   text-align: center;
-  margin: -10%;
+  margin: -13%;
 }
 
 #gif-container {
@@ -45,7 +45,7 @@ header {
   z-index: -5;
   position: absolute;
   top: -15%;
-  left: -35%;
+  left: -25%;
 }
 
 button {
@@ -55,4 +55,12 @@ button {
 }
 input {
   padding: 5px 20px 5px;
+}
+
+@media only screen and (min-width: 200px) {
+  header {
+    max-width: fit-content;
+    max-height: fit-content;
+    line-height: 15vh;
+  }
 }

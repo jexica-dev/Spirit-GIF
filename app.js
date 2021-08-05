@@ -22,32 +22,33 @@ let nameFirstLetterIndex = letters.indexOf(nameFirstLetter)
 animalName = animals[nameFirstLetterIndex]
 
 
-// function showAnimal(animals) {
+function showAnimal(animals) {
   
-//     let animalElement = `
+    let animalElement = `
   
-//     <img src="${gif.images.downsized_medium.url}">
-//     `
-//     document.querySelector('#animal-container').insertAdjacentHTML('beforeend', animalElements) 
+    <img src="${gif.images.downsized_medium.url}">
+    `
+    document.querySelector('#animal-container').insertAdjacentHTML('beforeend', animalElement) 
 
-// }
+}
+ 
 
-  
-// }
 
-//
+
 function showGifData(gifs) {
   gifs.forEach((gif, index) => {
 
   //append gif to container
     // let gifElements = `<img src="${gif.images.downsized_medium.url}">`
 
+    
     let gifElements = `
     <div id="gif-${index}" class="gif-block">
       <img class="gif" src="${gif.images.downsized_medium.url}">
     </div>
     `
-    document.querySelector('#gif-container').insertAdjacentHTML('beforeend', gifElements) 
+    document.querySelector('#gif-container').insertAdjacentHTML('beforeend', gifElements)
+    
   });
    
 }
@@ -57,12 +58,12 @@ function showGifData(gifs) {
 
 async function getGif() {
     let gifContainer = document.querySelector('#gif-container')
-    gifContainer.innerHTML = ""
+  gifContainer.innerHTML = ""
+  const responseAnimal = await axios.get(`${BASE_URL}${animalName}`)
   const response = await axios.get(`${BASE_URL}${NAME.value}`)
-  // const responseAnimal = await.get(`${BASE_URL}${animalName}`)
   showGifData(response.data.data)
-  console.log(response)
-  // showAnimalData(responseAnimal.data.data)
+  // console.log(response)
+  showAnimalData(responseAnimal.data.data)
 
   // functionName(response.data.data) to grab the animals and append 
 }
