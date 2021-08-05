@@ -2,8 +2,8 @@ const DOMAIN = 'http://api.giphy.com/v1/stickers/search'
 const API_KEY = 'evsVx9tZ3CipCmZgREMZqaCdKPGn4beP'
 const NAME = document.querySelector(`#name`);
 const BASE_URL = `${DOMAIN}?api_key=${API_KEY}&q=`;
-
 const button = document.querySelector("#search")
+// const AN_URL = `${DOMAIN}?api_key=${API_KEY}&q=${animalName}`
 
 
 // Adding 
@@ -58,9 +58,10 @@ function showGifData(gifs) {
 async function getGif() {
     let gifContainer = document.querySelector('#gif-container')
   gifContainer.innerHTML = ""
-  const responseAnimal = await axios.get(`${BASE_URL}${animalName}`)
+  // const responseAnimal = await axios.get(`${AN_URL}`)
   
   const response = await axios.get(`${BASE_URL}${NAME.value}`)
+
   // showAnimalData(responseAnimal.data.data)
   showGifData(response.data.data)
   // console.log(response)

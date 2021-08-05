@@ -2,6 +2,7 @@
 
 html {
   overflow: hidden;
+
 }
 header {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
@@ -13,34 +14,17 @@ header {
   filter: drop-shadow(5px 5px 1px yellow);
 }
 
-/* #parallax { */
-/* Set a specific height */
-/* margin: 25%; */
-/* min-height: 500px; */
 
-/* Create the parallax scrolling effect */
-/* background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-} */
-
-.gif {
-  height: 50vh;
-}
 
 .gif-block {
   display: inline-block;
-  /* border: 1px solid black; */
   padding: 15px;
-  /* width: 275px; */
   text-align: center;
   margin: -13%;
 }
 
 #gif-container {
-  margin: 15% 25% 0;
+  margin: 5% 25% 0;
   text-align: center;
   z-index: -5;
   position: absolute;
@@ -57,28 +41,30 @@ input {
   padding: 5px 20px 5px;
 }
 
-@media only screen and (min-width: 200px) {
+@media only screen and (min-width: 400px) {
   header {
     left: 20%;
-    line-height: 13vh;
+    line-height: 15vh;
   }
 
   #gif-block {
-    position: block;
+    position absolute;
     overflow: hidden;
     max-width: max-content;
     overflow: hidden;
-    top: 5%;
+    top: 8%;
   }
 
   #gif {
-    position: absolute;
-    left: -30%;
-    max-height: 5vh;
+    position: block;
+    left: -45%;
+    width: 75vw;
+    margin: -5vh;
   }
 
   body {
     display: block;
     position: fixed;
+    top: 0;
   }
 }
