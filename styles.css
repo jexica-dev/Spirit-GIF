@@ -8,6 +8,7 @@ header {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 50px;
+  line-height: 15vh;
   text-align: center;
   padding-top: 5%;
   z-index: 100;
@@ -54,10 +55,11 @@ input {
   padding: 5px 20px 5px;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (max-width: 400px) {
   header {
-    left: 20%;
-    line-height: 15vh;
+    left: 10%;
+    width: fit-content;
+    line-height: 2em;
   }
 
   #gif-block {
