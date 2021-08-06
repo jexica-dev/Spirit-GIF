@@ -14,7 +14,8 @@ function showAnimal(animalName) {
   console.log(firstAnimal);
   let animalElement = `
       <img src="${firstAnimal.images.downsized_medium.url}"/>
-    `;
+    `
+    ;
   document
     .querySelector("#animal-container")
     .insertAdjacentHTML("beforeend", animalElement);
