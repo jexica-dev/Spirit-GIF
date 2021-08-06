@@ -10,13 +10,12 @@ header {
   font-size: 50px;
   text-align: center;
   padding-top: 5%;
-  z-index: 10;
+  z-index: 100;
   filter: drop-shadow(5px 5px 1px yellow);
   margin-left: 5%;
 }
 
 .gif {
-/* max-width: 35vw; */
  max-height: 45vh;
 }
 
@@ -30,9 +29,8 @@ header {
 #animal-container img {
   position: absolute;
   top: 25%;
-  /* width: ; */
-  z-index: -3;
-  
+  z-index: -1;
+  max-width: 300px;
 }
 
 #gif-container {
@@ -41,7 +39,6 @@ header {
   z-index: -5;
   position: absolute;
   top: -15%;
-  /* left: 1%; */
 }
 
 

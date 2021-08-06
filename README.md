@@ -3,6 +3,7 @@
 ## Spirit GIF
 
 `https://github.com/xicaz/Spirit-GIF`
+
 `https://xicaz.github.io/Spirit-GIF/`
 
 ## Project Description
@@ -47,7 +48,6 @@ The project will be a playful site using Giphy's API to create the user's GIF/me
                     "hash": "9f0dc320bf7dd38785cf30391311bfe6"
                 },
 
-
 ```
 
 ## Wireframes
@@ -71,7 +71,7 @@ The functionality will then be divided into two separate lists: MPV and Post MVP
 
 #### PostMVP
 
-- Add second API to add random animals using the same first letter.
+- Add random animals, based on the same first letter of their name.
 
 ## Project Schedule
 
@@ -79,24 +79,24 @@ The functionality will then be divided into two separate lists: MPV and Post MVP
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-| Day      | Deliverable                                                     | Status     |
-| -------- | --------------------------------------------------------------- | ---------- |
-| July 30  | Prompt / Wireframes / Priority Matrix / Timeframes              | Complete   |
-| August 3 | Project Approval / Core Application Structure (HTML, CSS, etc.) | Complete   |
-| August 3 | Pseudocode / actual code                                        | Incomplete |
-| August 4 | Initial Clickable Model                                         | Incomplete |
-| August 5 | MVP                                                             | Incomplete |
-| August 6 | Presentations                                                   | Incomplete |
+| Day      | Deliverable                                                     | Status   |
+| -------- | --------------------------------------------------------------- | -------- |
+| July 30  | Prompt / Wireframes / Priority Matrix / Timeframes              | Complete |
+| August 3 | Project Approval / Core Application Structure (HTML, CSS, etc.) | Complete |
+| August 3 | Pseudocode / actual code                                        | Complete |
+| August 4 | Initial Clickable Model                                         | Complete |
+| August 5 | MVP                                                             | Complete |
+| August 6 | Presentations                                                   | Complete |
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix. Link this image in a similar manner to your wireframes
+![Priority](https://i.postimg.cc/RFqkRrgW/Genius-Priority-Matrix.png)
 
 ## Timeframes
 
-<!-- Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
+<!-- Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day. -->
 
-Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly. -->
+<!-- Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.  -->
 
 | Component        | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------- | :------: | :------------: | :-----------: | :---------: |
