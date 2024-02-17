@@ -63,7 +63,7 @@ The functionality will then be divided into two separate lists: MPV and Post MVP
 
 #### MVP
 
-![Spirit Gif](https://i.postimg.cc/jjxgnzmd/MVP.png)
+![Spirit Gif](https://i.imgur.com/3Qv204V.png)
 
 - Find and use external api
 - Render data on page
